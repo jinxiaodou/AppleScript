@@ -67,6 +67,7 @@ on run argv
 	--设置偏好
 	tell application "System Events"
 		tell process "System Preferences"
+			delay 1
 			try
 				-- select选中此行
 				-- of这里应该从后向前看，第一个window -> 第一个group -> 第一个滚动块 -> 第一个表格 -> 第7行，我的第7行是互联网共享，可根据各自情况修改
